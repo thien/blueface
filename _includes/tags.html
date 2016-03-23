@@ -1,0 +1,10 @@
+{% if post.tags %}
+	{% for tag in post.tags %}
+    	<span class="label label-default"><a href="/tags#{{ tag }}-ref" title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a></span>
+    {% endfor %}
+{% endif %}
+{% if page.tags %}
+	{% for tag in page.tags %}
+    	<span class="label label-default"><a href="/tags#{{ tag }}-ref" title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a></span>
+    {% endfor %}
+{% endif %}

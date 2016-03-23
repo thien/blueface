@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article>
+<div class="heading">{{ page.title }}</div>
+<p class="meta"><a class="permalink" href="{{ post.url }}">&#9679;</a> {{ page.date | date_to_string }}</p>
+{{ content }}
+{% include tags.html %}
+</article>

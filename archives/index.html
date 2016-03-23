@@ -1,0 +1,51 @@
+---
+layout: default
+title: Archives
+---
+<div id="home">
+<ul class="posts">
+<!--   <div class="header">Archive</div>
+{% for post in site.posts %}
+   {% assign post_words = 0 %}
+    {% assign lines = post.content|split:'pre>' %}
+    {% for line in lines %}
+        {% assign mod = forloop.index|modulo:2 %}
+        {% assign line_words = line|strip_html|number_of_words|times:mod %}
+        {% assign post_words = post_words|plus:line_words %}
+    {% endfor %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+        <a class="bar" href="#" title="{{ post_words }} words"
+            style="width:{{ post_words | divided_by:20 | plus: 10 }}px;">&nbsp;</a>
+    </li>
+
+    {% endfor %}
+ -->
+
+<section id="archive">
+
+<div class="heading">Archives</div>
+
+  {% for post in site.posts %}
+<ul>
+    {% unless post.next %}
+      <h3>{{ post.date | date: '%Y' }}</h3>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+      <h3>{{ post.date | date: '%Y' }}</h3>
+      {% endif %}
+    {% endunless %}
+
+    <li><span>{{ post.date | date:"%d %b" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>  <br>
+
+    <span class="details">{{ post.content | number_of_words }} words </span>{% include tags.html %}
+
+<!--     <a class="bar" href="#" title="{{ post_words }} words"
+            style="width:{{ post.content | number_of_words | append: '.0' | divided_by:30 }}px;">&nbsp;</a>
+            </li> -->
+
+            <!-- {{ post.content | number_of_words | append: '.0' | divided_by:180 | append: 'min' }} is minute counter, 180wpm -->
+            </ul>
+  {% endfor %}
+</section>

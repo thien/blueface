@@ -1,0 +1,21 @@
+<header>
+<div id="nav_container">
+<nav>
+{% unless page.layout == 'front' %}
+  <ul>
+  <h1><a href="/">{{ site.title }}</a></h1>
+    {% for link in site.navigation %}
+      {% assign current = nil %}
+      {% if page.url == link.url or page.layout == link.layout %}
+        {% assign current = 'current' %}
+      {% endif %}
+
+      <li class="{{ current }}">
+        <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endunless %}
+</nav>
+</div>
+</header>
