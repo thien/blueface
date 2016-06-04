@@ -1,0 +1,10 @@
+
+*.espressostorage
+_site/*
+_site/archives/index.html
+
+_site/about/index.html
+
+_site/css/main.css
+
+_site/css/syntax.css

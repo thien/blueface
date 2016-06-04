@@ -1,13 +1,12 @@
 # Jekyll Defaults
-title: Little Big Blue
+title: blueface
 description: A small and simple site I made to test out Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "http://localhost:3000"
-github: http://github.com/ITSJOHNCENA
-
-markdown: redcarpet
+github: http://github.com/blueface
 highlighter: rouge
+markdown: kramdown
 permalink: /post/:title/
 paginate: 4
 gems: [jekyll-paginate]
