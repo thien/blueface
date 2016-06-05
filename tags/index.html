@@ -16,13 +16,13 @@ group: navigation
   {% assign tags_list = site.tags %}
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
-      <span class="label label-default"><a href="{{ site.baseurl }}/tags#{{ tag }}-ref">
+      <span class="label label-default"><a href="#{{ tag }}-ref">
         {{ tag }} <!--<span class='badge'>{{ site.tags[tag].size }}</span>-->
       </a></span>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %}
-      <span class="label label-default"><a href="{{ site.baseurl }}/tags#{{ tag[0] }}-ref">
+      <span class="label label-default"><a href="#{{ tag[0] }}-ref">
         {{ tag[0] }} <!--<span class='badge'>{{ tag[1].size }}</span>-->
       </a></span>
     {% endfor %}
@@ -41,9 +41,9 @@ group: navigation
       {% if node.title != null %}
         {% if group == null or group == node.group %}
           {% if page.url == node.url %}
-          <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+          <li class="active"><a href="{{ site.baseurl }}{{node.url}}" class="active">{{node.title}}</a></li>
           {% else %}
-          <li><a href="{{node.url}}">{{node.title}}</a></li>
+          <li><a href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
           {% endif %}
         {% endif %}
       {% endif %}
