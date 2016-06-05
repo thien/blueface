@@ -10,11 +10,9 @@ blueface is a minimalist Jekyll theme. It is responsive, generates JSON and RSS 
 ## blueface on the Internet
 
 * [blueface][github] on GitHub (Source Code)
-* [thien.io][Thien Nguyen] theme creator's website
 * [nolsigan][nolsigan] nolsigan.github.io
 * [rjsteckel][rjsteckel] data, beer, and stats
 
 [github]: https://github.com/tnguyen/blueface/
-[Thien Nguyen]: http://thien.io
 [nolsigan]: http://nolsigan.github.io
 [rjsteckel]: http://rjsteckel.github.io
