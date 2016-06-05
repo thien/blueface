@@ -4,15 +4,14 @@ description: A small and simple site I made to test out Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "http://localhost:3000"
-github: http://github.com/blueface
+github: http://github.com/tnguyen/blueface
 highlighter: rouge
 markdown: kramdown
 permalink: /post/:title/
 paginate: 4
 gems: [jekyll-paginate]
 paginate_path: "/page:num"
-rss_path: feed.xml
-tags_path: tag.html
+rss_path: /feed.xml
 navigation:
 - text: About
   url: /about/
