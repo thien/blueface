@@ -3,7 +3,7 @@
 <nav>
 {% unless page.layout == 'front' %}
   <ul>
-  <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ site.title }}</a></h1>
     {% for link in site.navigation %}
       {% assign current = nil %}
       {% if page.url == link.url or page.layout == link.layout %}
