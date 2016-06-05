@@ -7,12 +7,12 @@ url: "http://localhost:3000"
 github: http://github.com/tnguyen/blueface
 highlighter: rouge
 markdown: kramdown
-permalink: /post/:title/
+permalink: /blueface/post/:title/
 paginate: 4
 gems: [jekyll-paginate]
-paginate_path: "/page:num"
-rss_path: feed.xml
-tags_path: tag.html
+paginate_path: "blueface/page:num"
+rss_path: blueface/feed.xml
+tags_path: blueface/tag.html
 navigation:
 - text: About
   url: /blueface/about/
