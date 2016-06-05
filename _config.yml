@@ -4,7 +4,7 @@ description: A small and simple site I made to test out Jekyll.
 baseurl: "/blueface" # the subpath of your site, e.g. /blog
 
 url: "http://localhost:3000"
-github: http://github.com/blueface
+github: http://github.com/tnguyen/blueface
 highlighter: rouge
 markdown: kramdown
 permalink: /post/:title/
@@ -15,8 +15,8 @@ rss_path: feed.xml
 tags_path: tag.html
 navigation:
 - text: About
-  url: /about/
+  url: /blueface/about/
 - text: Archives
-  url: /archives/
+  url: /blueface/archives/
 - text: Tags
-  url: /tags/
+  url: /blueface/tags/
