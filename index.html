@@ -6,8 +6,8 @@ group: navigation
 
   {% for post in paginator.posts %}
       <article>
-      <div class="heading"><a href="{{ post.url }}">{{ post.title }}</a></div>
-      <p class="meta"><a class="permalink" href="{{ post.url }}">&#9679;</a> {{ post.date | date_to_string }}</p>
+      <div class="heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+      <p class="meta"><a class="permalink" href="{{ site.baseurl }}{{ post.url }}">&#9679;</a> {{ post.date | date_to_string }}</p>
       <div>
         {{ post.content }}
         </div>
