@@ -125,7 +125,7 @@ p {
 p strong {
     font-weight: 500;
     font-style: normal;
-    font-family: Roboto;
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, Sans-serif !important;
 }
 article {
     margin-top: 32px;
