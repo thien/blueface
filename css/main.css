@@ -143,7 +143,7 @@ article {
     margin-bottom: 5px;
 }
 .label a {
-    font: 75% -apple-system, Roboto, Helvetica-Neue, Helvetica, "Open Sans", Arial, sans-serif;
+    font: 75% -apple-system, Roboto, Helvetica Neue, Helvetica, "Open Sans", Arial, sans-serif;
     font-weight: 300 !important;
     color: #ffffff;
 }
@@ -161,7 +161,7 @@ article {
     text-decoration: none;
 }
 .tag-header {
-    font-family: Raleway;
+    font-family: Raleway, Helvetica;
     text-transform: uppercase;
 }
 hr {
