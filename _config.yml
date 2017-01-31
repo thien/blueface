@@ -1,7 +1,7 @@
 # Jekyll Defaults
 title: blueface
 description: A small and simple site I made to test out Jekyll.
-baseurl: "/blueface" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "http://thien.io/blueface"
 github: http://github.com/tnguyen/blueface
@@ -14,8 +14,8 @@ paginate_path: "/page:num"
 rss_path: /feed.xml
 navigation:
 - text: About
-  url: /blueface/about/
+  url: /about/
 - text: Archives
-  url: /blueface/archives/
+  url: /archives/
 - text: Tags
-  url: /blueface/tags/
+  url: /tags/
