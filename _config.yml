@@ -3,7 +3,7 @@ title: blueface
 description: A small and simple site I made to test out Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
 
-url: "http://localhost:3000"
+url: "http://thien.io/blueface"
 github: http://github.com/tnguyen/blueface
 highlighter: rouge
 markdown: kramdown
