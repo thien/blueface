@@ -2,10 +2,10 @@
 	http://localhost:4000/css/main.css */
 
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,500,100,300italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
-@import url(http://fonts.googleapis.com/css?family=Raleway:800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500,100,300italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import url(https://fonts.googleapis.com/css?family=Raleway:800);
 * {
     margin: 0px;
     padding: 0px;
